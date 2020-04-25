@@ -27,7 +27,7 @@ const movePiece = () => {
   // Your code here
   if(isLegal()){
       //get last piece from startStack
-      var pieceToMove = start.pop();
+      let pieceToMove = start.pop();
       //push last piece from startStack to the ending stack
       end.push(pieceToMove);
       //check for a win
@@ -43,9 +43,9 @@ const isLegal = () => {
   // Your code here
 
   //holds last value in startStack, if any
-  var peekStart; 
+  let peekStart; 
   //holds last value in endStack, if any
-  var peekEnd; 
+  let peekEnd; 
 
   //if there are items in startStack, get the last one
   //else return false
@@ -89,7 +89,7 @@ const towersOfHanoi = (startStack, endStack) => {
   // Your code here
 
     //regex to check if its only has lowercase letters a through c, and has only 1 character
-    var regex = "^[a-c]{1}$";
+    let regex = "^[a-c]{1}$";
 
     //if startStack and endStack are not empty and match regex criteria, try to move the piece
     //else do nothing and return
